@@ -38,7 +38,7 @@ space(1)
 # selection = alt.selection_single(fields=['type'], bind=input_dropdown)
 
 all_types = titulos.type.unique()
-type_select = st.multiselect("Primero elige que prefieres... ¿Show (Series) o Movies (Peliculas=?", all_types, all_types[:2])
+type_select = st.multiselect("Primero elige que prefieres... ¿Show (Series) o Movies (Peliculas)", all_types, all_types[:2])
 
 datos_p1 = titulos[titulos.type.isin(type_select)]
 
